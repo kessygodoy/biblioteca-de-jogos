@@ -15,17 +15,21 @@
 img{
   height: 150px;
   width: 150px;
-  display: flex;
   object-fit: cover;
 }
 .games{
+  display: flex;
   margin: 3rem;
+  flex-wrap: wrap;
 }
 .games div{
   display: flex;
   margin-bottom: 2rem;
 }
 .games div div{
+  min-width: 300px;
+  max-width: 350px;
+
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -42,8 +46,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -68,6 +72,7 @@ button, input {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  min-width: 200px;
 }
 button:hover {
   border-color: #646cff;
